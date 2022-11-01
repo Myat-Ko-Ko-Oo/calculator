@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   body{
+    background-color: #1F2326;
+  
+   }
+h2{
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    margin-right:100px ;
+}
+.calculator_form{
+    width: 500px;
+    filter: drop-shadow(16px 16px 20px black);
+    margin:  70px auto;
+    
+
+}
+input{
+    width: 74.5%;
+    height: 40px;
+    text-align: right;
+    font-size: 50px;
+    
+}
+   ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+   }
+   li{
+    margin: 0px;
+    user-select: none;
+    cursor: pointer;
+    width: 90px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1F2326;
+    text-align: center;
+    background-color:#2D2D2D;
+    color: white;
+    
+}
+.calculator_form div{
+width: 500px;
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="calculator_form">
+      <h2>My Own Calculator</h2>
+      <input type="text" id="result_screen" />
+     <div>
+        <ul>
+          <li name =seven value="7">7</li>
+          <li name =eight value="8">8</li>
+          <li name =nine value="9">9</li>
+          <li name =divided data-cal="/">/</li>
+        </ul>
+        <ul>
+          <li name =four value="4">4</li>
+          <li name =five value="5">5</li>
+          <li name =six value="6">6</li>
+          <li name =multiple data-cal="*">*</li>
+        </ul>
+        <ul>
+          <li name =one value="1">1</li>
+          <li name =two value="2">2</li>
+          <li name =three value="3">3</li>
+          <li name =minus data-cal="-">-</li>
+        </ul>
+        <ul>
+            <li name =zero value="0">0</li>
+            <li name =dot value=".">.</li>
+            <li name =plus value="+">+</li>
+            <li name =equal data-cal="=">=</li>
+          </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
